@@ -55,13 +55,103 @@ body{
 
 /*---------------------------------------*/
 
-.album_container{}
+/*#tapetry_container{
+    width: 500px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "box1 box1 box2 box3 box8"
+                         "box1 box1 box4 box4 box9"
+                         "box5 box6 box6 box7 box9"
+                         "box3 box3 box8 box5 box5";
+    margin-top: 50px;
+}
 
-.album_cover{}
+#tapetry_container .tapetry{
+    width: 100px;
+    height: 100px;
+}
 
-.album_title{}
+#tapetry_container #one{
+    
+    background-image: url(./Media/logo\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box1;
+}
 
-.album_group{}
+#tapetry_container #two{
+    
+    background-image: url(./Media/panic.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box2;
+}
 
-.album_genre{}
+#tapetry_container #three{
+    
+    background-image: url(./Media/royal1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box3;
+}
+
+#tapetry_container #four{
+    
+    background-image: url(./Media/slide2.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box4;
+}
+
+#tapetry_container #five{
+    
+    background-image: url(./Media/royal\ details.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box5;
+}
+
+#tapetry_container #six{
+    
+    background-image: url(./Media/panic\ card.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box6;
+}
+
+#tapetry_container #seven{
+    
+    background-image: url(./Media/slide3.png);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box7;
+}
+
+#tapetry_container #eight{
+    
+    background-image: url(./Media/logo\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box8;
+}
+
+#tapetry_container #nine{
+    
+    background-image: url(./Media/royal1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid white;
+    grid-area: box9;
+}
+*/
 
