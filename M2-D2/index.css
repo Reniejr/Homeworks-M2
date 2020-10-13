@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+}
+
+/*---------------------------------------*/
+
+.navbar{
+    color: white;
+    background-color: black;
+}
+
+/*---------------------------------------*/
+
+.jumbotron{
+    margin-top: 50px;
+    color: white;
+}
+
+
+/*---------------------------------------*/
+
+.carousel{
+    margin-top: 50px;
+}
+
+/*---------------------------------------*/
+
+#top_album{
+    margin-top: 50px;
+}
+
+.card{
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.card img{
+    height: 250px;
+}
+
+/*---------------------------------------*/
+
+.album_container{}
+
+.album_cover{}
+
+.album_title{}
+
+.album_group{}
+
+.album_genre{}
+
