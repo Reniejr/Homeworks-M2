@@ -72,18 +72,18 @@
 
     <!-- APP (NAMES)----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-    <div class="container">
+    <div class="container" id="names">
 
-        <div class="row">
+        <div class="row" id="names_row">
 
-            <div class="col-6">
+            <div class="col-6" id="names_input">
 
-                <input type="text" placeholder="Add names">
-                <input type="button" value="Add">          
+                <input type="text" placeholder="Add names" class="text_input">
+                <input type="button" value="Add" class="button">          
             
             </div>
 
-            <div class="col-6">
+            <div class="col-6 col-md-3 col-lg-2" id="names_result">
 
                 <ul>
                     Names
@@ -98,26 +98,16 @@
 
     <!-- APP (TEAMS)----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-    <div class="container">
+    <div class="container" id="teams">
 
-        <div class="row">
+        <div class="row" id="teams_row">
 
-            <div class="col-6">
+            <div class="col-6" id="teams_input">
 
-                <input type="text" placeholder="Name of Team">
-                <input type="button" value="Add">          
+                <input type="text" placeholder="Number of Team" class="text_input">
+                <input type="button" value="Add" class="button">
+                <input type="button" value="Shuffle" id="shuffle" onclick="shuffle()">          
             
-            </div>
-
-            <div class="col-6">
-
-                <table>
-                    <tr>
-                        <td>Team</td>
-                        <td>Members</td>
-                    </tr>
-                </table>
-
             </div>
 
         </div>
@@ -127,7 +117,7 @@
 
     <!-- 5----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-    
+    <input type="button" id="reset" value="Reset" onclick="resetApp()">
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
