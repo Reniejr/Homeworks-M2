@@ -84,7 +84,6 @@ let namesAdd = document.querySelector('#names_input .button')
 let namesUl = document.querySelector('#names_result ul')
 let namesRow = document.querySelector('#names_row')
 
-let teamsText = document.querySelector('#teams_input .text_input')
 let teamsAdd = document.querySelector('#teams_input .button')
 let teamsRow = document.querySelector('#teams_row')
 
@@ -109,6 +108,7 @@ namesAdd.addEventListener('click', function(){
     namesUl.id = counterUl
     namesUlList.push(namesUl)
     counterUl = counterUl + 1
+    namesText.value = ''
 
     /*if(counter>3){
 
@@ -154,12 +154,12 @@ function shuffle() {
 
     let teamsList = []
     let counterUlt = 0
-    let numberTeams = teamsText.value
+    let numberTeams = document.querySelector('#teams_input .text_input')
     let counterCol = 0
 
     teamsAdd.addEventListener('click', function(){
 
-        for( let a = 0; a < numberTeams; a++){
+        for( let a = 0; a < parseInt(numberTeams.value); a++){
 
             let newCol = document.createElement('div')
             newCol.classList.add('col')
@@ -186,6 +186,7 @@ function shuffle() {
                 newTeamMember.innerText = newNamesList[casual].innerText
                 teamUl.appendChild(newTeamMember)
                 namesUl.removeChild(newNamesList[casual])
+                newNamesList.splice(casual, 1)
 
                 let removeFromTeam = document.createElement('input')
                 removeFromTeam.type = 'button'
@@ -206,6 +207,7 @@ function shuffle() {
             counterUlt = counterUlt + 1
         }
         
+        numberTeams.value = ''
     })
 
 /* FUNCTIONS - ADD MEMBERS -------------------------------------------------------------------------------------------------------- */
@@ -228,6 +230,9 @@ const resetApp = function(){
     while(namesUl.innerText !== 'Names'){
         namesUl.removeChild(namesUl.lastChild)
     }
+    numberTeams.value = ''
+    namesText.value = ''
+    
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
