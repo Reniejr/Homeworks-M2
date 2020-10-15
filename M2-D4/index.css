@@ -20,6 +20,7 @@ body{
     color: #1d1d1d;
     border: 5px solid #00c666;
     border-radius: 10px;
+    font-size: 1.25rem;
 }
 
 .jumbotron p{
@@ -35,8 +36,18 @@ main{
 p{
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
     color: whitesmoke;
+    font-size: 2rem;
+}
+
+.row{
+    
+    border: 1px solid #00c666;
+    border-radius: 10px;
+    box-shadow: 3px;
+    padding: 2%;
+    margin-top: 10px;
 }
 
 .text_input{
@@ -64,17 +75,13 @@ p{
 
 #names .row {
     height: 150px;
-    border: 4px solid #00c666;
-    border-radius: 10px;
-    box-shadow: 3px;
-    padding: 2%;
 }
 
 #names_input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid #00c666;
+    border-right: 4px solid #00c666;
 }
 
 #names #names_row #names_result{
@@ -96,25 +103,20 @@ p{
 
 #teams .row{
     height: 10%;
-    border: 4px solid #00c666;
-    border-radius: 10px;
-    box-shadow: 3px;
-    padding: 2%;
-    margin-top: 10px;
 }
 
 #teams_input{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid #00c666;
-    padding: 5px 5px 10px 5px;
+    border-bottom: 4px solid #00c666;
+    padding: 20px 5px;
 }
 
 #teams_row .col{
     padding: 10px;
-    margin: 5px;
-    border: 2px solid #00c666;
+    margin: 20px 5px;
+    border: 1px solid #00c666;
     border-radius: 5px;
 }
 
@@ -122,6 +124,8 @@ p{
 
     list-style-type: none;
     padding: 5px 0;
+    font-size: 1.25rem;
+    color: antiquewhite;
 
 }
 
@@ -132,6 +136,7 @@ p{
     background-color: #1d1d1d;
     border: #00c666 2px solid;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 #teams_row .col ul input:hover{
@@ -144,6 +149,7 @@ p{
 
     margin: 7px;
     color: white;
+    font-size: 0.9rem;
     
 }
 
@@ -167,12 +173,15 @@ p{
     margin-bottom: 20px;
 }
 
-/* 6-------------------------------------------------------------------------------------------------------- */
+/* FOOTER-------------------------------------------------------------------------------------------------------- */
 
-/* 7-------------------------------------------------------------------------------------------------------- */
+#footer{
+    background-color: antiquewhite;
+    margin: 0;
+    height: 50px;
+}
 
-/* 8-------------------------------------------------------------------------------------------------------- */
-
-/* 9-------------------------------------------------------------------------------------------------------- */
-
-/* 10-------------------------------------------------------------------------------------------------------- */
+#footer p{
+    color: #1d1d1d;
+    font-size: 10px;
+}
