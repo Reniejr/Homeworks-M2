@@ -132,23 +132,6 @@ namesAdd.addEventListener('click', function(){
     }*/
 
 })
-
-function shuffle() {
-    var currentIndex = newNamesList.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = newNamesList[currentIndex];
-      newNamesList[currentIndex] = newNamesList[randomIndex];
-      newNamesList[randomIndex] = temporaryValue;
-    }
-}
   
 /* FUNCTIONS - ADD TEAMS -------------------------------------------------------------------------------------------------------- */
 
@@ -161,63 +144,63 @@ function shuffle() {
 
         for( let a = 0; a < parseInt(numberTeams.value); a++){
 
+            // NEW COLUMN
             let newCol = document.createElement('div')
             newCol.classList.add('col')
             newCol.id = counterCol
             counterCol = counterCol + 1
             teamsRow.appendChild(newCol)
 
-
+            //NEW TEAM LIST
             let teamUl = document.createElement('ul')
             teamUl.id = counterUlt
             teamsList.push(teamUl)
             teamUl.innerText = 'Team '+ (a + 1)
             newCol.appendChild(teamUl)
 
+            //BUTTON SELECT MEMBERS
             let mixButton = document.createElement('input')
             mixButton.type = 'button'
             mixButton.value = 'Select Memebers'
             mixButton.id = counterUlt
+
+            //FUNCTION FOR BUTTON SELECT MEMBERS
             mixButton.addEventListener('click', function(){
 
+                //SELECT THE RANDOM MEMBER
                 let casual = Math.floor(Math.random()*(newNamesList.length+1))
 
                 let newTeamMember = document.createElement('li')
                 newTeamMember.innerText = newNamesList[casual].innerText
                 teamUl.appendChild(newTeamMember)
+
+                //REMOVE FROM NAMES LIST
                 namesUl.removeChild(newNamesList[casual])
                 newNamesList.splice(casual, 1)
                 
-
+                //BUTTON REMOVE
                 let removeFromTeam = document.createElement('input')
                 removeFromTeam.type = 'button'
                 removeFromTeam.value = 'Remove'
                 removeFromTeam.addEventListener('click', function(){
 
-                newNamesList.push(newTeamMember)
-                teamUl.removeChild(newTeamMember)
-                newTeamMember.removeChild(removeFromTeam)
-                namesUl.appendChild(newTeamMember)
+                    //REMOVE FROM TEAM LIST AND PUSH IT ON NAMES LIST AGAIN
+                    newNamesList.push(newTeamMember)
+                    teamUl.removeChild(newTeamMember)
+                    newTeamMember.removeChild(removeFromTeam)
+                    namesUl.appendChild(newTeamMember)
 
                 })
                 newTeamMember.appendChild(removeFromTeam)
-
-                
             })
             teamUl.appendChild(mixButton)
 
             counterUlt = counterUlt + 1
         }
         
+        //RESET THE TEXT BOX
         numberTeams.value = ''
     })
-
-/* FUNCTIONS - ADD MEMBERS -------------------------------------------------------------------------------------------------------- */
-
-const addMembers = function(){
-
-
-}
 
 /* FUNCTIONS - RESET-------------------------------------------------------------------------------------------------------- */
 
@@ -236,25 +219,5 @@ const resetApp = function(){
     namesText.value = ''
     
 }
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------------------------------------- */
