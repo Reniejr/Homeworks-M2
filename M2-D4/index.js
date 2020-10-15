@@ -187,15 +187,16 @@ function shuffle() {
                 teamUl.appendChild(newTeamMember)
                 namesUl.removeChild(newNamesList[casual])
                 newNamesList.splice(casual, 1)
+                
 
                 let removeFromTeam = document.createElement('input')
                 removeFromTeam.type = 'button'
                 removeFromTeam.value = 'Remove'
                 removeFromTeam.addEventListener('click', function(){
 
-                    
+                newNamesList.push(newTeamMember)
                 teamUl.removeChild(newTeamMember)
-                namesUl.appendChild(newNamesList[casual])
+                namesUl.appendChild(newTeamMember)
 
                 })
                 newTeamMember.appendChild(removeFromTeam)
