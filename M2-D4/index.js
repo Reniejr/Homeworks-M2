@@ -196,6 +196,7 @@ function shuffle() {
 
                 newNamesList.push(newTeamMember)
                 teamUl.removeChild(newTeamMember)
+                newTeamMember.removeChild(removeFromTeam)
                 namesUl.appendChild(newTeamMember)
 
                 })
