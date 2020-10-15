@@ -7,16 +7,23 @@
 }
 
 body{
-    height: 200vh;
+    background-color: #222222;
+    color: #00c666;
 }
 /* HEADER-------------------------------------------------------------------------------------------------------- */
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
+
+/* JUMBOTRON-------------------------------------------------------------------------------------------------------- */
+
+.jumbotron{
+    background-color: #00c666;
+    color: #1d1d1d;
+    border: 5px solid #00c666;
+    border-radius: 10px;
+}
+
+.jumbotron p{
+    color: #1d1d1d;
 }
 
 /* MAIN-------------------------------------------------------------------------------------------------------- */
@@ -25,15 +32,140 @@ main{
     margin-top: 50px;
 }
 
+p{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.text_input{
+    padding: 3px;
+    color: antiquewhite;
+    background-color: #1d1d1d;
+    border: 2px solid #00c666;
+    border-radius: 5px;
+}
+
+.button{
+    padding: 3px;
+    color: antiquewhite;
+    background-color: #1d1d1d;
+    border: #00c666 2px solid;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color:#00c666;
+    color: black;
+}
+
 /* APP NAMES-------------------------------------------------------------------------------------------------------- */
 
 #names .row {
     height: 150px;
+    border: 4px solid #00c666;
+    border-radius: 10px;
+    box-shadow: 3px;
+    padding: 2%;
 }
 
-/* 4-------------------------------------------------------------------------------------------------------- */
+#names_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #00c666;
+}
 
-/* 5-------------------------------------------------------------------------------------------------------- */
+#names #names_row #names_result{
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+}
+
+#names_result ul li{
+    display: inline-block;
+    margin: 3px;
+    border: 1px solid #00c666;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* APP TEAMS-------------------------------------------------------------------------------------------------------- */
+
+#teams .row{
+    height: 10%;
+    border: 4px solid #00c666;
+    border-radius: 10px;
+    box-shadow: 3px;
+    padding: 2%;
+    margin-top: 10px;
+}
+
+#teams_input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #00c666;
+    padding: 5px 5px 10px 5px;
+}
+
+#teams_row .col{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #00c666;
+    border-radius: 5px;
+}
+
+#teams_row .col ul{
+
+    list-style-type: none;
+    padding: 5px 0;
+
+}
+
+#teams_row .col ul input{
+
+    padding: 3px;
+    color: antiquewhite;
+    background-color: #1d1d1d;
+    border: #00c666 2px solid;
+    border-radius: 5px;
+}
+
+#teams_row .col ul input:hover{
+    
+    background-color:#00c666;
+    color: black;
+}
+
+#teams_row .col ul li{
+
+    margin: 7px;
+    color: white;
+    
+}
+
+#teams_row .col ul li input{
+
+    margin: 0 10px;
+    padding: 3px;
+    color: antiquewhite;
+    background-color: #1d1d1d;
+    border: #00c666 2px solid;
+    border-radius: 5px;
+}
+
+
+/* RESET BOTTOM-------------------------------------------------------------------------------------------------------- */
+
+#reset{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 /* 6-------------------------------------------------------------------------------------------------------- */
 

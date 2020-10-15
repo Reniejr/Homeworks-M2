@@ -109,28 +109,6 @@ namesAdd.addEventListener('click', function(){
     namesUlList.push(namesUl)
     counterUl = counterUl + 1
     namesText.value = ''
-
-    /*if(counter>3){
-
-        let newNamesCol = document.createElement('div')
-        newNamesCol.classList.add = 'col-6 col-md-3 col-lg-2'
-
-        let newNamesUl = document.createElement('ul')
-        newNamesUl.innerText = 'Names'
-        newNamesCol.appendChild(newNamesUl)
-        namesRow.appendChild(newNamesCol)
-
-        let newName = document.createElement('li')
-        newName.id = counter
-        counter = counter+1
-        newName.innerText = namesText.value
-        newNamesList.push(newName)
-        newNamesUl.appendChild(newName)
-        newNamesUl.id = counterUl
-        namesUlList.push(namesUl)
-        counterUl = counterUl + 1
-    }*/
-
 })
   
 /* FUNCTIONS - ADD TEAMS -------------------------------------------------------------------------------------------------------- */
@@ -154,8 +132,9 @@ namesAdd.addEventListener('click', function(){
             //NEW TEAM LIST
             let teamUl = document.createElement('ul')
             teamUl.id = counterUlt
+            teamUl.classList.add = 'team_list'
             teamsList.push(teamUl)
-            teamUl.innerText = 'Team '+ (a + 1)
+            teamUl.innerText = 'Team '+ (a + 1) + '\n'
             newCol.appendChild(teamUl)
 
             //BUTTON SELECT MEMBERS
