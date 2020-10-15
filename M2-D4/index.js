@@ -8,9 +8,6 @@ window.onload = function (){
     let header = document.getElementById('header')
     let main = document.getElementById('main')
     let footer = document.getElementById('footer')
-    header.style.visibility = 'hidden' 
-    main.style.visibility = 'hidden'
-    footer.style.visibility = 'hidden'
     
     header.style.opacity = '0' 
     main.style.opacity = '0'
@@ -49,11 +46,7 @@ window.onload = function (){
         document.body.style.backgroundColor = '#1d1d1d'
         document.body.style.transition = 'background-color 3s ease'
         document.body.style.transitionDelay = '1.7s'
-            
-        header.style.visibility = 'visible' 
-        main.style.visibility = 'visible'
-        footer.style.visibility = 'visible'
-
+        
         header.style.opacity = '1' 
         main.style.opacity = '1'
         footer.style.opacity = '1'
