@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------------------------------------------- */
 
-/*window.onload = function (){
+window.onload = function (){
 
     //INTRO - LOGO ANIMATION
 
@@ -8,9 +8,14 @@
     let header = document.getElementById('header')
     let main = document.getElementById('main')
     let footer = document.getElementById('footer')
-    header.style.display = 'none' 
-    main.style.display = 'none'
-    footer.style.display = 'none'
+    header.style.visibility = 'hidden' 
+    main.style.visibility = 'hidden'
+    footer.style.visibility = 'hidden'
+    
+    header.style.opacity = '0' 
+    main.style.opacity = '0'
+    footer.style.opacity = '0'
+    document.body.style.backgroundColor = 'white'
     
 
     //INTRO VIDEO
@@ -19,8 +24,9 @@
     intro.src = 'Logo RJD Developer.mp4'
     intro.type = 'video/mp4'
     intro.style.width = '100%'
-    intro.style.height = '100%'
     intro.style.position = 'absolute'
+    intro.style.top = '50%'
+    intro.style.transform = 'translateY(-50%)'
 
     //INTRO - PROPERTY
     intro.muted = 'true'
@@ -32,41 +38,35 @@
     //Fade out at the end
     intro.addEventListener('ended', function(){
 
-        intro.style.opacity = '1'
-        intro.style.transition = 'opacity 3s ease'
-
         intro.style.opacity = '0'
         intro.style.transition = 'opacity 3s ease'
+        intro.style.zIndex = '-300'
 
-        intro.style.display = 'none'
 
 
         //Fade in of layout
 
+        document.body.style.backgroundColor = '#1d1d1d'
+        document.body.style.transition = 'background-color 3s ease'
+        document.body.style.transitionDelay = '1.7s'
             
-        header.style.display = 'block' 
-        main.style.display = 'block'
-        footer.style.display = 'block'
-
-        
-        header.style.opacity = '0' 
-        main.style.opacity = '0'
-        footer.style.opacity = '0'
-
-        header.style.transition = 'opacity 2s ease'
-        main.style.transition = 'opacity 2s ease'
-        footer.style.transition = 'opacity 2s ease'
+        header.style.visibility = 'visible' 
+        main.style.visibility = 'visible'
+        footer.style.visibility = 'visible'
 
         header.style.opacity = '1' 
         main.style.opacity = '1'
         footer.style.opacity = '1'
 
-        header.style.transition = 'opacity 2s ease'
-        main.style.transition = 'opacity 2s ease'
-        footer.style.transition = 'opacity 2s ease'
+        header.style.transition = 'opacity 3s ease'
+        header.style.transitionDelay = '1.7s'
+        main.style.transition = 'opacity 3s ease'
+        main.style.transitionDelay = '1.7s'
+        footer.style.transition = 'opacity 3s ease'
+        footer.style.transitionDelay = '1.7s'
 
     },false)
-}*/
+}
 
 /* CONTAINERS SELECTED-------------------------------------------------------------------------------------------------------- */
 
