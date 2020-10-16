@@ -1,0 +1,197 @@
+/* 1-------------------------------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*, *:before, *:after{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+    color: #ffffff;
+    height: 200vh;
+}
+
+/* MAIN-------------------------------------------------------------------------------------------------------- */
+
+header{
+    position: fixed;
+    top: 0;
+}
+
+#profile_container{
+
+    display: flex;
+    margin-top: 56px ;
+
+}
+
+#profile_settings{
+
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+/* TITLE-------------------------------------------------------------------------------------------------------- */
+
+#title{
+
+    margin: 0.5em;
+    border-bottom: 1px solid #333333;
+    padding: 0;
+
+}
+
+#title h1{
+    
+    text-align: left;
+    font-size: 7vh;
+}
+
+
+/* IMAGE PROFILE -------------------------------------------------------------------------------------------------------- */
+#image_settings{
+    display: flex;
+}
+
+
+#profile_image{
+
+    display: inline-block;
+    margin-left: 50%;
+    
+}
+
+#profile_image img{
+    
+    width: 5em;
+    height: 5em;
+}
+
+
+/* LANGUAGE-------------------------------------------------------------------------------------------------------- */
+
+
+#languages h2{
+
+    font-size: 2.5vh;
+    margin-top: 2vh;
+
+}
+
+#languages .dropdown .btn{
+
+    font-size: 2vh;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    width: fit-content;
+    padding: .5em;
+    background-color: #333333;
+}
+
+.dropdown-menu{
+    background-color: black;
+    color: #ffffff;
+}
+.dropdown-menu ul{
+    list-style: none;
+}
+/* MATURITY SETTINGS-------------------------------------------------------------------------------------------------------- */
+
+#maturity_settings{
+
+    margin-top: 1vh;
+    padding: 0;
+    border-top: 1px solid #333333;
+}
+
+#maturity_settings h2{
+    font-size: 2.5vh;
+    margin: 1vh;
+}
+
+
+#maturity_settings p{
+    font-size: 1.75vh;
+}
+
+#maturity_settings ul{
+    list-style: none;
+}
+
+#maturity-selected li{
+
+    background-color: #333333;
+    font-size: 2vh;
+    max-width: 75%;
+    height: 3vh;
+
+}
+
+
+#maturity_settings button{
+
+    
+    font-size: 2vh;
+    color: #808080;
+    border: 1px solid #808080;
+    border-radius: 0px;
+    width: fit-content;
+    padding: .5em;
+    background-color: #141414;
+
+}
+/* AUTOPLAY CONTROLS-------------------------------------------------------------------------------------------------------- */
+
+#autoplay_controls{
+    
+    margin-top: 1vh;
+    border-top: 1px solid #333333;
+}
+
+#autoplay_controls h2{
+
+    font-size: 2.5vh;
+    margin: 1vh;
+}
+
+#autoplay_controls .autoplay_check{
+    display: flex;
+}
+
+.autoplay_check input{
+    min-height: 3vh;
+    min-width: 3vh;
+    background-color: #333333;
+    border: #141414;
+
+}
+
+.autoplay_check span{
+    font-size: 2vh;
+    justify-content: bottom;
+}
+
+
+/* SAVE & CANCEL-------------------------------------------------------------------------------------------------------- */
+#save_cancel{
+
+    margin: 0.5em;
+    border-top: 1px solid #333333;
+    padding: 1.5em 0 0 0;
+
+}

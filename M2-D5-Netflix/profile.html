@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="profile.css">
+
+    <title>Team B</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <header>
+
+        <!-- Image and text -->
+        <nav class="navbar sticky-top" >
+            <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/407px-Netflix_icon.svg.png
+            " width="30" height="30" class="d-inline-block align-top" alt="">
+            Team B Netflix
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    <main class="container" id="profile_container" >
+
+
+        <div class="container" id="profile_settings">
+
+            <!-- PROFILE - TITLE ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+            <div class="row" id="title">
+
+                    <h1>Edit Profile</h1>
+                    
+            </div>
+
+            <!-- PROFILE - CONTENT ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+            <div class="row" id="profile_content">
+
+                <!-- IMAGE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <div class="col-4" id="image_settings">
+
+                    <div id="profile_image">
+                        <img src="./Media/img.jpg" alt="" width="100%" height="100%">
+                    </div>
+
+                </div>
+
+                <!-- PROFILE INFOS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <div class="col-8" id="profile_edits">
+
+                    <!-- LANGUAGE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div id="languages">
+
+                        <input type="text">
+
+                        <h2>Language</h2>
+
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select language
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <ul>
+                                  <li class="language">English</li>
+                                  <li class="language">Italian</li>
+                                  <li class="language">Albanian</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                    </div>
+
+                    <!-- MATURITY SETTINGS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div id="maturity_settings">
+
+                        <h2>Maturity Settings:</h2>
+
+                        <ul id="maturity-selected">
+                            <li id="maturity-picked"></li>
+                        </ul>
+
+                        <p>Show Titles of all maturity ratings for this profile</p>
+
+                        
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Edit
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <ul>
+                                  <li class="maturity_rate">Kids</li>
+                                  <li class="maturity_rate">V.M. 14</li>
+                                  <li class="maturity_rate">V.M. 18</li>
+                                  <li class="maturity_rate">None</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                    </div>
+
+                    <!-- AUTOPLAY CONTROLS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <div id="autoplay_controls">
+
+                        <h2>AutoPlay Controls</h2>
+
+                        <div class="autoplay_option">
+
+                           <div class="autoplay_check">
+
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                  
+                            <span>
+                               Autoplay next episode in a series on all devices.
+                            </span>
+
+                           </div>
+                            
+                           <div class="autoplay_check">
+
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                                  
+                            <span>
+                               Autoplay previews while browsing on all devices
+                            </span>
+
+                           </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SAVE & CANCEL----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+            <div class="row" id="save_cancel">
+
+                <div class="col-12">
+
+                    <button type="button" class="btn btn-secondary">Save</button>
+                    
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    
+    </main>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script src="profile.js"></script>
+
+</body>
+</html>
