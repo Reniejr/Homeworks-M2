@@ -48,7 +48,8 @@ aside > div:nth-child(2) > ol li > *{
 
 /* EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
 
-a:last-of-type{
+footer > p:last-of-type > a{       
+    color: red;
 }
 
 /* EX10) Write a selector to target the footer */
