@@ -53,7 +53,7 @@ const changeColSize = function (){
     for( let a = 0; a < cols.length; a++){
 
         cols[a].classList.remove('col-md-6')
-        cols[a].className = 'col-12'
+        cols[a].classList.add('col-12')
     }
 }
 
