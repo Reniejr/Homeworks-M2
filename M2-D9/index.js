@@ -67,6 +67,7 @@ bSlide.addEventListener('click', function(){
 
     if(breadcrumb.style.marginTop = '-5vh'){
         breadcrumb.style.marginTop = '0'
+        breadcrumb.style.transition = 'margin-top 3s ease'
     }
     else if(breadcrumb.style.marginTop = '0'){
         breadcrumb.style.marginTop = '-5vh'
