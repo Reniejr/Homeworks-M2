@@ -1,4 +1,4 @@
-/*window.onload = function (){
+window.onload = function (){
 
     //INTRO - LOGO ANIMATION
 
@@ -34,7 +34,7 @@
     intro.addEventListener('ended', function(){
 
         /*intro.style.opacity = '1'
-        intro.style.transition = 'opacity 3s ease'
+        intro.style.transition = 'opacity 3s ease'*/
 
         intro.style.opacity = '0'
         intro.style.transition = 'opacity 3s ease'
@@ -58,7 +58,7 @@
 
     },false)
  
-}*/
+}
 
 let breadcrumb = document.querySelector('#breadcrumb')
 let bSlide = document.querySelector('#breadcrumb div')
@@ -92,57 +92,59 @@ let albumSource = document.querySelector('.modal-body input:nth-of-type(1)')
 let addSource = document.querySelector('.modal-body input:nth-of-type(2)')
 let albumTitle = document.querySelector('.modal-body input:nth-of-type(3)')
 let addTitle = document.querySelector('.modal-body input:nth-of-type(4)')
-let titlesArray = []
-let sourceArray = []
+
+
+
+let newAlbum = document.createElement('div')
+newAlbum.className= 'col-3'
+let albumImg = document.createElement('img')
 
 let source = function(){
 
-    let newAlbum = document.createElement('div')
-    newAlbum.className= 'col'
-    let albumImg = document.createElement('img')
     albumImg.src = albumSource.value
     newAlbum.appendChild(albumImg)
-    sourceArray.push(newAlbum)
 }
 
+
+let newTitle = document.createElement('div')
+newTitle.className = 'col-3'
+let titleWord = document.createElement('h6')
 
 let titleAdd = function(){
 
-    let newTitle = document.createElement('div')
-    newTitle.className = 'col'
-    let titleWord = document.createElement('h6')
-    titleWord.innerText = addTitle.value
+    titleWord.innerText = albumTitle.value
     newTitle.appendChild(titleWord)
-    titlesArray.push(newTitle)
 }
+
+
+let newRow = document.createElement('div')
+newRow.className= 'row'
 
 let addTrack = function(){
 
     let newLenght = document.createElement('div')
-    newLenght.className = 'col'
+    newLenght.className = 'col-3'
     let lenghtWord = document.createElement('h6')
     lenghtWord.innerText = '?'
     newLenght.appendChild(lenghtWord)
 
     let newRemove = document.createElement('div')
-    newRemove.className = 'col'
+    newRemove.className = 'col-3'
     let removeButton = document.createElement('button')
     removeButton.classList.add = 'btn'
     removeButton.classList.add = 'btn-outline-secondary'
-    removeButton.value = 'REMOVE'
+    removeButton.innerText = 'REMOVE'
     removeButton.addEventListener('click', function(){
 
-        tracksRow[a+1].style.opacity = '0'
-        tracksRow[a+1].style.transition = 'opacity 3s ease'
-        setTimeout(function(){tracksTable.removeChild(tracksRow[a+1])}, 3000)
+        newRow.style.opacity = '0'
+        newRow.style.transition = 'opacity 3s ease'
+        setTimeout(function(){tracksTable.removeChild(newRow)}, 3000)
     } )
     newRemove.appendChild(removeButton)
 
-    let newRow = document.createElement('div')
-    newRow.className= 'row'
 
-    newRow.appendChild(sourceArray[0])
-    newRow.appendChild(titlesArray[0])
+    newRow.appendChild(newAlbum)
+    newRow.appendChild(newTitle)
     newRow.appendChild(newLenght)
     newRow.appendChild(newRemove)
 
