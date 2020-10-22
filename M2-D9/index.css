@@ -4,16 +4,45 @@ body{
 
 /*---------------------------------------*/
 
-.navbar{
-    color: white;
-    background-color: black;
+#breadcrumb{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    margin-top: -5vh;
 }
+
+#breadcrumb ol{
+    background-color: #1d1d1d!important;
+    color: #fff!important;
+    margin: 0;
+}
+
+#breadcrumb div::before{
+    content: "";
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -50%;
+    background-color: #1d1d1d;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+}
+
+/*---------------------------------------*/
+
 
 /*---------------------------------------*/
 
 .jumbotron{
     margin-top: 50px;
     color: white;
+    background: url(./Media/jumbotron.jpg);
+    background-size: cover;
 }
 
 
@@ -28,6 +57,7 @@ body{
 
 #top_album{
     margin-top: 50px;
+    position: relative;
 }
 
 .card{
@@ -41,6 +71,8 @@ body{
 
 /*---------------------------------------*/
 
+
+
 #album_details{
     margin-top: 50px;
     color: white;
@@ -53,105 +85,23 @@ body{
     margin: auto;
 }
 
+.badge{
+
+    position: absolute;
+    width: 30px ;
+    height: 30px;
+    border-radius: 50%;
+    top: -2%;
+    right: 0;
+    z-index: 10;
+    font-size: smaller;
+}
+.badge:hover{
+    transform: rotate(-360deg);
+    padding: 3vh;
+    transition: transform 3s, padding 1s ease;
+}
+
 /*---------------------------------------*/
 
-/*#tapetry_container{
-    width: 500px;
-    height: 400px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "box1 box1 box2 box3 box8"
-                         "box1 box1 box4 box4 box9"
-                         "box5 box6 box6 box7 box9"
-                         "box3 box3 box8 box5 box5";
-    margin-top: 50px;
-}
-
-#tapetry_container .tapetry{
-    width: 100px;
-    height: 100px;
-}
-
-#tapetry_container #one{
-    
-    background-image: url(./Media/logo\ bg.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box1;
-}
-
-#tapetry_container #two{
-    
-    background-image: url(./Media/panic.png);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box2;
-}
-
-#tapetry_container #three{
-    
-    background-image: url(./Media/royal1.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box3;
-}
-
-#tapetry_container #four{
-    
-    background-image: url(./Media/slide2.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box4;
-}
-
-#tapetry_container #five{
-    
-    background-image: url(./Media/royal\ details.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box5;
-}
-
-#tapetry_container #six{
-    
-    background-image: url(./Media/panic\ card.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box6;
-}
-
-#tapetry_container #seven{
-    
-    background-image: url(./Media/slide3.png);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box7;
-}
-
-#tapetry_container #eight{
-    
-    background-image: url(./Media/logo\ bg.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box8;
-}
-
-#tapetry_container #nine{
-    
-    background-image: url(./Media/royal1.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 5px solid white;
-    grid-area: box9;
-}
-*/
 
