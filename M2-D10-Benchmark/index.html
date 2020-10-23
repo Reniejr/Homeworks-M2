@@ -32,7 +32,7 @@
     <div id="project">
       <header>
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Navbar</a>
             <button
               class="navbar-toggler"
@@ -177,26 +177,30 @@
           <div class="banner-split">
           </div>
           <div class="row">
-            <div class="col-3">
-            </div>
-          <div class="col-3">
-            <img src="./Media/logo.png" alt="" width="50px">
+          <div class="col-4">
+            <img src="./Media/logobanner.png" alt="" width="70px">
           </div>
-          <div class="col-3">
-            <h5>Giveaway</h5>
-
+          <div class="col-4">
+            <span>Giveaway: </span><span> Special Games</span>
           </div>
-          <div class="col-3">
+          <div class="col-4">
             <input type="button" value="Get it Free">
           </div>
           </div>
-        
         </div>
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- SLIDER----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
 
         <div class="row">
+          <div class="container d-flex" style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+            <i class="fas fa-highlighter"></i>
+            <h5>Highlights</h5>
+          </div>
+        </div>
+
+        <div class="row" id="slider-row">
           <div class="slider">
             <div class="slide-container">
               <div class="slide"><img src="./Media/bannerbg.jpg" alt=""></div>
@@ -205,6 +209,8 @@
               <div class="slide"><img src="./Media/bannerbg.jpg" alt=""></div>
               <div class="slide"><img src="./Media/bannerbg.jpg" alt=""></div>
             </div>
+            <i class="fas fa-chevron-circle-left fa-2x" onclick="prev()"></i>
+            <i class="fas fa-chevron-circle-right fa-2x" onclick="next()"></i>
           </div>
         </div>
 
@@ -213,58 +219,114 @@
 
         <!-- SPECIALS OFFERS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-        <div class="row">
-          <div class="container">
-            <div class="row">
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+        <div class="row" style="margin: 3vh 0;">
+            <div class="row d-flex" style="justify-content: space-evenly;">
+              <div class="card" style=" width: 23%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between; width: 100%;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card" style=" width: 23%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card" style=" width: 23%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+              <div class="card" style=" width: 23%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             
-          </div>
         </div>
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- INFOS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <div class="row">
-          <div class="container">
-            <div class="row">
-              <div class="col-8">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ratione facere nihil beatae ex rerum obcaecati a expedita. Quis itaque sint minima unde delectus incidunt odio dolorem, eos illo non.</p>
+        <div class="row" style="padding: 10px; border-top: 1px solid rgba(0, 0, 0, 0.3); border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+              <div class="col-8" style="border-right: 1px solid rgba(0, 0, 0, 0.3); font-size: smaller;">
+                <p>We are GOG.COM, the DRM-free home for a curated selection of games. This place was made for gamers, so make yourself at home</p>
               </div>
-              <div class="col-4">
-              </div>
-            </div>
-          </div>
+              <div class="col-4 d-flex" style="justify-content: center;">
+                <div style="width: 20px; height: 20px; border-radius: 50%; border: 4px solid #6400d1;"></div>
+                <p>The new GOG Galaxy 2.0</p>
+              </div>      
         </div>
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -273,17 +335,15 @@
           <div class="banner-split">
           </div>
           <div class="row">
-            <div class="col-3">
-            </div>
-          <div class="col-3">
-            <img src="./Media/logo.png" alt="" width="50px">
+          <div class="col-4">
+            <img src="./Media/logobanner.png" alt="" width="70px">
           </div>
-          <div class="col-3">
+          <div class="col-4">
             <h5>Giveaway</h5>
 
           </div>
-          <div class="col-3">
-            <input type="button" value="">
+          <div class="col-4">
+            <input type="button" value="Check More">
           </div>
           </div>
         
@@ -292,243 +352,661 @@
 
         <!-- NOW ON SALE----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         <div class="row">
-          <div class="container">
             
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            <nav aria-label="breadcrumb" style="width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+              <ol class="breadcrumb d-flex" style=" background-color: #d8d8d8;">
+                <li class="breadcrumb-item d-flex" style="font-weight: bolder;">
+                  <i class="fas fa-percent"></i>
+                  Now on sale   
+                </li>
+                <li class="breadcrumb-item"><a href="#">Featured Deals</a></li>
+                <li class="breadcrumb-item"><a href="#">Aquanox Deep Descent</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Weekly Sale</li>
+                <li class="breadcrumb-item"><a href="#">Paradox Grand Strategy Collection</a></li>
+                <li class="breadcrumb-item">
+                </li>
               </ol>
             </nav>
-          </div>
         </div>
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <!-- SLIDER OFFERS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <div class="row">
-          <div class="slider">
+        <div class="row" style="margin: 3vh 1vh;">
+          <div class="slider-offers" style="overflow: hidden;">
             <div class="slide-container">
-              <div class="slide d-flex">
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
+              <div class="slide d-flex" style="justify-content: space-between;">
+                <div class="card-offers">
+                  <h3>Weekly Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Paradox Grand Strategy Collection</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Stellarius Bundle</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Midweek Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
               </div>
-              <div class="slide d-flex">
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
+              <div class="slide d-flex" style="justify-content: space-between;">
+                <div class="card-offers">
+                  <h3>Weekly Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Paradox Grand Strategy Collection</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Stellarius Bundle</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Midweek Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
               </div>
-              <div class="slide d-flex">
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
+              <div class="slide d-flex" style="justify-content: space-between;">
+                <div class="card-offers">
+                  <h3>Weekly Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Paradox Grand Strategy Collection</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Stellarius Bundle</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Midweek Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
               </div>
-              <div class="slide d-flex">
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
+              <div class="slide d-flex" style="justify-content: space-between;">
+                <div class="card-offers">
+                  <h3>Weekly Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Paradox Grand Strategy Collection</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Stellarius Bundle</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Midweek Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
               </div>
-              <div class="slide d-flex">
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="card-offers"><img src="./Media/bannerbg.jpg" alt=""></div>
+              <div class="slide d-flex" style="justify-content: space-between;">
+                <div class="card-offers">
+                  <h3>Weekly Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Paradox Grand Strategy Collection</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Stellarius Bundle</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
+                <div class="card-offers">
+                  <h3>Midweek Sale</h3>
+                  <div class="card-offers-discount">
+                    <h4>Up To</h4>
+                    <h2>-50%</h2>
+                  </div>
+                  <div class="timer">
+                  </div>
+                  <button type="button" class="btn btn-outline-light">Light</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         
-        <!-- SPECIALS OFFERS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- EUROPA OFFERS----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <div class="row">
-          <div class="container">
-            <div class="row">
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="container d-flex" style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+            <i class="fas fa-star"></i>
+            <h5>Build your Europa Universalis bundle</h5>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 3vh 0;">
+          <div class="row d-flex" style="justify-content: space-evenly;">
+            <div class="card" style=" width: 23%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between; width: 100%;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+
+                  </div>
                 </div>
               </div>
             </div>
-            
-          </div>
-        </div>
-        <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <!-- SLIDER WHAT'S GOOD----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <div class="card" style=" width: 23%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
 
-        <div class="row">
-          <div class="slider">
-            <div class="slide-container">
-              <div class="slide row">
-                <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="col-6">
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
                   </div>
                 </div>
               </div>
-              <div class="slide row">
-                <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="col-6">
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
+            </div>
+            <div class="card" style=" width: 23%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
                   </div>
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide row">
-                <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="col-6">
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+
                   </div>
                 </div>
               </div>
-              <div class="slide row">
-                <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="col-6">
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
+            </div>
+            <div class="card" style=" width: 23%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="100px">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
                   </div>
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide row">
-                <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                <div class="col-6">
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
-                    <div class="col-6"><img src="./Media/bannerbg.jpg" alt=""></div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          
+      </div>
+      <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+      <!-- SLIDER WHAT'S GOOD----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
+      <div class="row">
+        <div class="container d-flex" style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+          <i class="fas fa-star"></i>
+          <h5>What's good</h5>
+        </div>
+      </div>
+
+      <div class="row" style="height:700px; margin: 3vh 0;">
+        <div class="col-6">
+          <div class="card" style="height: 100%;">
+            <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="500px">
+            <div class="card-body">
+              <h5 class="card-title">Title game</h5>
+              <div class="row d-flex" style="justify-content: space-between;">
+                <div class="icons-compatible d-flex" style='width: 40%;'>
+                  <i class="fab fa-windows"></i>
+                  <i class="fab fa-apple"></i>
+                  <i class="fab fa-linux"></i>
+                </div>
+                <div class="price d-flex">
+                  <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                    50%
+                  </p>
+                  <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                    100€ <br>
+                    50€
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6" style="height: 100%">
+          <div class="row" style="height: 50%;">
+            <div class="col-6">
+              <div class="card" style="height: 100%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+                <div class="card-body">
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card" style="height: 100%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+                <div class="card-body">
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="height: 50%;">
+            <div class="col-6">
+              <div class="card" style="height: 100%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+                <div class="card-body">
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card" style="height: 100%;">
+                <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+                <div class="card-body">
+                  <h5 class="card-title">Title game</h5>
+                  <div class="row d-flex" style="justify-content: space-between;">
+                    <div class="icons-compatible d-flex" style='width: 40%;'>
+                      <i class="fab fa-windows"></i>
+                      <i class="fab fa-apple"></i>
+                      <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="price d-flex">
+                      <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                        50%
+                      </p>
+                      <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                        100€ <br>
+                        50€
+                      </p>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
         <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         <!-- SLIDER RECCOMENDED----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-        <div class="row">
-          <div class="slider">
-            <div class="slide-container">
-              <div class="slide container">
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-              </div>
-              <div class="slide container">
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-              </div>
-              <div class="slide container">
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-              </div>
-              <div class="slide container">
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-              </div>
-              <div class="slide container">
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                </div>
-                <div class="row">
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
-                  <div class="col-4"><img src="./Media/bannerbg.jpg" alt=""></div>
+        <div class="row" style="margin: 3vh 0;">
+          <div class="container d-flex" style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+            <i class="fas fa-star"></i>
+            <h5>Recommended for you</h5>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 3vh 0; height: 300px;">
+
+          <div class="col-4">
+            <div class="card" style="height: 100%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+  
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-4">
+            <div class="card" style="height: 100%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="height: 100%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+        <div class="row" style="margin: 3vh 0; height: 300px;">
+
+          <div class="col-4">
+            <div class="card" style="height: 100%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="height: 100%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="height: 100%;">
+              <img src="./Media/bannerbg.jpg" class="card-img-top" alt="..." height="60%">
+              <div class="card-body">
+                <h5 class="card-title">Title game</h5>
+                <div class="row d-flex" style="justify-content: space-between;">
+                  <div class="icons-compatible d-flex" style='width: 40%;'>
+                    <i class="fab fa-windows"></i>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-linux"></i>
+                  </div>
+                  <div class="price d-flex">
+                    <p class="discount" style="padding: 5px; background-color: #78387b; color: white; border-radius: 3px;">
+                      50%
+                    </p>
+                    <p class="total price d-flex" style="width: 60%; justify-content: space-between;">
+                      100€ <br>
+                      50€
+                    </p>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         </div>
 
 
@@ -536,154 +1014,33 @@
         
         <!-- DISCOVER AND FEATURED----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-        <div class="container">
-          <div class="row">
-            <div class="col-8">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Library</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+        <div class="container" style="margin: 3vh 0;">
+          <div class="row" style="height: 700px;">
+            <div class="col-8" style="height: 100%;">
+              <nav aria-label="breadcrumb" style="width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+                <ol class="breadcrumb d-flex" style=" background-color: #d8d8d8;">
+                  <li class="breadcrumb-item d-flex" style="font-weight: bolder;">
+                    <i class="fas fa-percent"></i>
+                    Now on sale   
+                  </li>
+                  <li class="breadcrumb-item"><a href="#">Featured Deals</a></li>
+                  <li class="breadcrumb-item"><a href="#">Aquanox Deep Descent</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Weekly Sale</li>
+                  </li>
                 </ol>
               </nav>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="" alt="">
-                </div>
-                <div class="col-4">
-                  <h5>Title</h5>
-                </div>
-                <div class="col-4">
-                  <h5>Price</h5>
-                </div>
-              </div>
             </div>
-            <div class="col-4">
-              <div class="row">
-                <div class="col-12">
-                  <img src="./Media/bannerbg.jpg" alt="">
+            <div class="col-4 d-flex" style="height: 100%; flex-direction: column;">
+              <div class="row" style="margin: 3vh 0;">
+                <div class="container d-flex" style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+                  <i class="fas fa-images"></i>
+                  <h5>Featured</h5>
                 </div>
+
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="row">
-                    <img src="./Media/bannerbg.jpg" alt="">
-                  </div>
-                  <div class="row">
-                    <img src="./Media/bannerbg.jpg" alt="">
-                  </div>
-                </div>
-                <div class="col-6">
-                  <img src="./Media/bannerbg.jpg" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <img src="./Media/bannerbg.jpg" alt="">
-                </div>
-                <div class="col-6">
-                  <img src="./Media/bannerbg.jpg" alt="">
-                </div>
-              </div>
+
+
+              
             </div>
           </div>
           <div class="row">

@@ -60,7 +60,119 @@ window.onload = function (){
 
 }*/
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* SLIDER-------------------------------------------------------------------------------------------------------- */
+let sliderContainer = document.querySelector('.slide-container')
+let slide = document.querySelectorAll('.slide')
+
+
+const prev = function(){
+
+    switch(sliderContainer.style.marginLeft){
+        case sliderContainer.style.marginLeft = '0':
+            sliderContainer.style.marginLeft = '-400%';
+            slide[3].style.opacity = '0.5';
+            slide[4].style.opacity = '1';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-100%':
+            sliderContainer.style.marginLeft = '0';
+            slide[1].style.opacity = '0.5';
+            slide[0].style.opacity = '1';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-200%':
+            sliderContainer.style.marginLeft = '-100%';
+            slide[0].style.opacity = '0.5';
+            slide[1].style.opacity = '1';
+            slide[2].style.opacity = '0.5';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-300%':
+            sliderContainer.style.marginLeft = '-200%';
+            slide[1].style.opacity = '0.5';
+            slide[2].style.opacity = '1';
+            slide[3].style.opacity = '0.5';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-400%':
+            sliderContainer.style.marginLeft = '-300%';
+            slide[2].style.opacity = '0.5';
+            slide[3].style.opacity = '1';
+            slide[4].style.opacity = '0.5';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        default:
+            ;
+    }
+}
+
+const next = function(){
+
+    switch(sliderContainer.style.marginLeft){
+        case sliderContainer.style.marginLeft = '0':
+            sliderContainer.style.marginLeft = '-100%';
+            slide[0].style.opacity = '0.5';
+            slide[1].style.opacity = '1';
+            slide[2].style.opacity = '1';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-100%':
+            sliderContainer.style.marginLeft = '-200%';
+            slide[1].style.opacity = '0.5';
+            slide[2].style.opacity = '1';
+            slide[3].style.opacity = '0.5';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-200%':
+            sliderContainer.style.marginLeft = '-300%';
+            slide[2].style.opacity = '0.5';
+            slide[3].style.opacity = '1';
+            slide[4].style.opacity = '0.5';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-300%':
+            sliderContainer.style.marginLeft = '-400%';
+            slide[3].style.opacity = '0.5';
+            slide[4].style.opacity = '1';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        case sliderContainer.style.marginLeft = '-400%':
+            sliderContainer.style.marginLeft = '0';
+            slide[1].style.opacity = '0.5';
+            slide[0].style.opacity = '1';
+            sliderContainer.style.transition = 'margin-left 1s ease'
+        break;
+        default:
+            ;
+    }
+}
+switch(sliderContainer.style.marginLeft){
+    case sliderContainer.style.marginLeft = '0':
+        slide[1].style.opacity = '0.5';
+        slide[0].style.opacity = '1';
+    break;
+    case sliderContainer.style.marginLeft = '-100%':
+        slide[0].style.opacity = '0.5';
+        slide[1].style.opacity = '1';
+        slide[2].style.opacity = '0.5';
+    break;
+    case sliderContainer.style.marginLeft = '-200%':
+        slide[1].style.opacity = '0.5';
+        slide[2].style.opacity = '1';
+        slide[3].style.opacity = '0.5';
+    break;
+    case sliderContainer.style.marginLeft = '-300%':
+        slide[2].style.opacity = '0.5';
+        slide[3].style.opacity = '1';
+        slide[4].style.opacity = '0.5';
+    break;
+    case sliderContainer.style.marginLeft = '-400%':
+        slide[4].style.opacity = '1';
+        slide[3].style.opacity = '0.5';
+    break;
+    default:
+        ;
+}
 
 /* -------------------------------------------------------------------------------------------------------- */
 
